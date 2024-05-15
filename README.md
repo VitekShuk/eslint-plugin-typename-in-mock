@@ -32,8 +32,19 @@ Add `typename-in-mock` to the plugins section of your `.eslintrc` configuration 
 
 ## Configurations
 
-<!-- begin auto-generated configs list -->
-TODO: Run eslint-doc-generator to generate the configs list (or delete this section if no configs are offered).
-<!-- end auto-generated configs list -->
+```
+//.eslintrc.js
+module.export = {
+    ...
+    overrides: [
+        {
+            files: [src/app/mocks/queries/*.js],
+            rules: {
+                'typename-in-mock/typename-in-mock': 'error',
+            }
+        }
+    ]
+}
+```
 
 
