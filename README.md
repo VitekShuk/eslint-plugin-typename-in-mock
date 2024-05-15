@@ -40,7 +40,7 @@ module.export = {
         {
             files: [src/app/mocks/queries/*.js],
             rules: {
-                'typename-in-mock/typename-in-mock': 'error',
+                'typename-in-mock/__typename': 'error',
             }
         }
     ]
